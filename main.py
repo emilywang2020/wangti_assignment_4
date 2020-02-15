@@ -49,7 +49,7 @@ def place(multiset, x_1, multiset_1):
         if abs(width - y) in x_1:  # if a recursive call needs to backtrack
             x_1.remove(abs(width - y))  # remove abs(width - y) from set x_1
         multiset.extend(D(abs(width - y), x_1,
-                          multiset))  # add the length of distances removed from the previous instruction back the
+                          multiset))  # add the length of distances removed from the previous instruction back to
         # the pairwise distance set
         for i in multiset:
             if multiset.count(i) > multiset_1.count(
